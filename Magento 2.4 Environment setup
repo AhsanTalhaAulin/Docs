@@ -142,6 +142,11 @@ Last update: 19/05/2021
   if it misses mysqli use the following command
   sudo apt-get install php7.4-mysqli
 
+  restart mysql and apache2
+
+  sudo systemctl restart apache2
+  sudo systemctl restart mysql
+
 
 
 
@@ -149,12 +154,19 @@ Last update: 19/05/2021
 
 # JAVA
 
-  java -version;
-  apt-get -y update;
-  apt-get install -y openjdk-8-jdk;
-  curl -XGET '<host>:9200/_cat/health?v&pretty';
-  apt-get install -y openjdk-8-jdk;
-  sudo apt-get install -y openjdk-8-jdk;
+ sudo apt-cache search openjdk
+ sudo apt-cache search openjdk|grep openjdk
+ java --version
+ sudo apt-get -y install openjdk-11-jre openjdk-11-jdk
+ java --version
+
+
+ sudo vim /etc/environment
+  |--> JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+  :wq
+	
+ source /etc/environment
+ echo $JAVA_HOME
 
 
 

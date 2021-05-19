@@ -130,6 +130,18 @@ Last update: 19/05/2021
   systemctl status mysql.service;
 
 
+#phpmyadmin
+
+  sudo apt -y install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+
+  //select apache2 put a * on the selection by pressing 'space' button
+
+  check if the link is working
+  http://localhost/phpmyadmin/
+
+  if it misses mysqli use the following command
+  sudo apt-get install php7.4-mysqli
+
 
 
 

@@ -55,6 +55,15 @@ Last update: 19/05/2021
   sudo update-alternatives --set php /usr/bin/php7.4;
   sudo systemctl restart apache2;
 
+  # make following changes in /etc/php/7.4/apache2/php.ini 
+
+      file_uploads = On
+      allow_url_fopen = On
+      short_open_tag = On
+      memory_limit = 512M
+      upload_max_filesize = 128M
+      max_execution_time = 3600
+
 
 
 
@@ -119,6 +128,7 @@ Last update: 19/05/2021
 
   //test
   systemctl status mysql.service;
+
 
 
 

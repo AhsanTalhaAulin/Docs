@@ -1,0 +1,60 @@
+#Create local server
+    Create folder
+        sudo mkdir -p /var/www/hosting/public_html ; 
+    Create localhost
+        sudo virtualhost create hosting.hww hosting/public_html ;
+    Permission    
+        sudo chown -R $USER:www-data /var/www/hosting; 
+    Restart apache2
+    sudo systemctl restart apache2;
+
+
+#Get the metapackage
+    
+    Going to the directory
+        cd /var/www/hosting/public_html ;
+
+    Composer create project
+        composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition .
+
+        create authentication from repo.magento.com
+        profile>> marketplace>> ACCESS KEYS>> 
+        username is the public key
+        password is the private key
+
+
+#Set file permissions
+
+    cd /var/www/html/<magento install directory>;
+    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +;
+    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +;
+    chown -R :www-data . # Ubuntu;
+    chmod u+x bin/magento;
+
+
+Install Magento
+bin/magento setup:install \
+--base-url=http://hosting.hww \
+--db-host=localhost \
+--db-name=hosting \
+--db-user=aulin \
+--db-password=asdf1234 \
+--admin-firstname=admin \
+--admin-lastname=admin \
+--admin-email=hoque.talha@gmail.com \
+--admin-user=admin \
+--admin-password=admin123 \
+--language=en_US \
+--currency=USD \
+--timezone=America/Chicago \
+--use-rewrites=1
+
+
+
+
+
+
+
+
+
+

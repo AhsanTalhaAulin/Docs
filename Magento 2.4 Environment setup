@@ -99,6 +99,17 @@ Last update: 19/05/2021
   sudo apt install apache2;
   sudo service apache2 start;
 
+  //virtualhost command setup
+  https://github.com/RoverWire/virtualhost
+
+  // use the commands below 
+
+  cd /usr/local/bin;
+  sudo wget -O virtualhost https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost.sh;
+  sudo chmod +x virtualhost
+
+
+
 
 
 

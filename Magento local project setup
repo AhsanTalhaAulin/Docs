@@ -1,0 +1,17 @@
+
+change here
+
+changeproject-name == boundless
+changeproject-url == boundless.hww
+
+
+
+sudo mkdir -p /var/www/boundless/public_html 
+sudo virtualhost create boundless.hww boundless/public_html 
+sudo chown -R $USER:www-data /var/www/boundless
+sudo systemctl restart apache2
+cd /var/www/boundless/public_html 
+git clone git@github.com:magento/magento2.git .
+sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && sudo chown -R :www-data .
+composer clearcache && composer update -vvv
+sudo chmod u+x bin/magento

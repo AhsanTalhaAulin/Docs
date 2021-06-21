@@ -33,7 +33,13 @@ sudo virtualhost create shaanmughal.hww shaanmughal/public_html ;
 
         create authentication from repo.magento.com
         profile>> marketplace>> ACCESS KEYS>> 
-        username is the public key
+        username is the public key 
+        
+        public 105320468500b938987bc990545b491b
+        private c26d4d3b79a4103490ecca5fcf353c03
+
+
+
         password is the private key
 
 

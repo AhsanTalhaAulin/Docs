@@ -177,6 +177,8 @@ Last update: 19/05/2021
  java --version
 
 
+ sudo apt-get -y install vim
+
  sudo vim /etc/environment
   |--> JAVA_HOME=/usr/lib/jvm/java-16-openjdk-amd64/
   :wq

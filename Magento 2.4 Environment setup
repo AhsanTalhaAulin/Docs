@@ -25,10 +25,7 @@ Last update: 19/05/2021
 
 
   sudo apt install php7.4;
-  sudo apt install php7.4-;
-  sudo apt install php7.4-ext-bcmath;
-
-  sudo apt install php7.4-ext-ctype;
+  
   sudo apt install php7.4-bcmath;
   sudo apt install php7.4-ctype;
 
@@ -73,16 +70,15 @@ Last update: 19/05/2021
 
 
 #Composer install
-
-  curl -sS https://getcomposer.org/installer -o composer-setup.php;
-
+	
+  cd ~
+  
   sudo apt install curl;
 
   curl -sS https://getcomposer.org/installer -o composer-setup.php;
+  
 
-  HASH=`curl -sS https://composer.github.io/installer.sig`;
-
-  curl -sS https://getcomposer.org/installer -o composer-setup.php;
+# create a hash for installation verification.
 
   HASH=`curl -sS https://composer.github.io/installer.sig`;
 
@@ -91,6 +87,10 @@ Last update: 19/05/2021
   php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer     verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;";
 
   sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer;
+  
+ # go to the directory
+ 
+  cd /usr/local/bin/
 
   Composer;
 
@@ -173,13 +173,12 @@ Last update: 19/05/2021
 
  sudo apt-cache search openjdk
  sudo apt-cache search openjdk|grep openjdk
- java --version
- sudo apt-get -y install openjdk-11-jre openjdk-11-jdk
+ sudo apt-get -y install openjdk-16-jre openjdk-16-jdk
  java --version
 
 
  sudo vim /etc/environment
-  |--> JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+  |--> JAVA_HOME=/usr/lib/jvm/java-16-openjdk-amd64/
   :wq
 	
  source /etc/environment

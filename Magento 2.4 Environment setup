@@ -213,7 +213,7 @@ Last update: 19/05/2021
   sudo systemctl enable elasticsearch;
 
   //configure elasticsearch memory limit **very important
-    /etc/elasticsearch/jvm.options
+    sudo gedit /etc/elasticsearch/jvm.options
     // change ##-Xms4g to -Xms512m
 // change ##-Xms4g to -Xmx512m  
 

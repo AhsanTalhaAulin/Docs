@@ -45,7 +45,7 @@ sudo virtualhost create shaanmughal.hww shaanmughal/public_html ;
 
 #Set file permissions
 
-    cd /var/www/html/<magento install directory>;
+    cd <magento install directory>;
 
 
     sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +;

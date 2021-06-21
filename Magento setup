@@ -56,6 +56,10 @@ sudo virtualhost create shaanmughal.hww shaanmughal/public_html ;
 
 Create database
 
+    mysql -u magento -p
+    
+    create database <database name>;
+
 
 
 Install Magento

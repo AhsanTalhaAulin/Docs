@@ -1,0 +1,37 @@
+1657971534232	geckodriver	INFO	Listening on 127.0.0.1:54713
+1657971534771	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57537" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileST6YVC"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657971535332	Marionette	INFO	Marionette enabled
+1657971535335	Marionette	INFO	Listening on port 46189
+WebDriver BiDi listening on ws://localhost:57537
+Read port: 46189
+ExceptionHandler::GenerateDump cloned child 46539
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+1657971737420	geckodriver	INFO	Listening on 127.0.0.1:34523
+1657971737422	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59489" "-no-remote" "-profile" "/tmp/rust_mozprofile0IjzfR"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657971737858	Marionette	INFO	Marionette enabled
+1657971737861	Marionette	INFO	Listening on port 43031
+WebDriver BiDi listening on ws://localhost:59489
+ExceptionHandler::GenerateDump cloned child 47175
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1657971741818	geckodriver	INFO	Listening on 127.0.0.1:39579
+1657971741820	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52685" "-no-remote" "-profile" "/tmp/rust_mozprofilerURk3i"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657971742237	Marionette	INFO	Marionette enabled
+1657971742241	Marionette	INFO	Listening on port 33995
+WebDriver BiDi listening on ws://localhost:52685
+ExceptionHandler::GenerateDump cloned child ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+47265
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
